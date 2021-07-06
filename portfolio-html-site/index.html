@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Title Page</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                     <a href="index.html">Home</a>
+              </div>
+
+            <div class="nav-link-wrapper">
+                  <a href="about.html">About</a>
+                    </div>
+             </div>
+
+            <div class="right-side">
+                <div class="brand">
+                 <div>Regina Thea Claire P. Ortega</div>
+                </div>
+             </div>
+         </div>
+
+         <div class="content-wrapper">
+             <div class="portfolio-items-wrapper">
+
+                 <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/1.png" alt="">
+            </div>
+
+            <div class="subtitle">Oral care designed for a modern lifestyle, developed to do the basics better, delivered fresh every 3 months for only $5.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/2.png" alt="">
+            </div>
+
+            <div class="subtitle">Build skills with courses, certificates, and degrees online from world-class universities. </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/3.png" alt="">
+            </div>
+
+            <div class="subtitle">Eventbrite brings people together through live experiences</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/4.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/4.png" alt="">
+            </div>
+
+            <div class="subtitle">Shop Hacker allows any merchant to easily import digital products such as elearning courses, software, and games directly into our ecommerce store.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/5.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/5.png" alt="">
+            </div>
+
+            <div class="subtitle"> Discover What You Can Create With Thousands of Inspiring Classes</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/6.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/6.png" alt="">
+            </div>
+
+            <div class="subtitle">One of the largest and most authoritative collections of online journals, books, and research resources, covering life, health, social, and physical sciences.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/7.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/7.png" alt="">
+            </div>
+
+            <div class="subtitle">The main source of information on local, regional and foreign affairs, as well as business news.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/8.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/8.png" alt="">
+            </div>
+
+            <div class="subtitle">Enjoy international shopping in one app</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/9.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/9.png" alt="">
+            </div>
+
+            <div class="subtitle">Master your language with lessons, quizzes, and projects designed for real-life scenarios.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/10.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/10.png" alt="">
+            </div>
+
+            <div class="subtitle">You'll find awesome free curriculum, lessons, and ideas for teaching kids at church</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/11.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/11.png" alt="">
+            </div>
+
+            <div class="subtitle">Real-life stories make God and the Bible relevant to your everyday life. Join millions around the world in this encouraging, Christian devotional.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/12.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/12.png" alt="">
+            </div>
+
+            <div class="subtitle">Good food and great vibes.</div>
+          </div>
+        </div>
+                 
+             </div>
+         </div>
+
+    </div>
+</body>
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('img-darken');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      portfolioItem.childNodes[1].classList.remove('img-darken');
+    });
+  });
+
+</script>
+
+</html> 
